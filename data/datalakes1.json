@@ -1,0 +1,155 @@
+{
+    "qcm": [
+      {
+        "question": "Quelle est l'une des raisons principales de l'émergence des Data Lakes ?",
+        "choices": [
+          "La nécessité de structurer les données avant stockage",
+          "L'augmentation du volume et de la diversité des données",
+          "La baisse des coûts des Data Warehouses",
+          "L'incompatibilité des bases de données relationnelles avec le Big Data"
+        ],
+        "answer": [1]
+      },
+      {
+        "question": "Quel type de données peut être stocké dans un Data Lake ?",
+        "choices": [
+          "Uniquement des données structurées",
+          "Uniquement des données semi-structurées",
+          "Uniquement des données non structurées",
+          "Données structurées, semi-structurées et non structurées"
+        ],
+        "answer": [3]
+      },
+      {
+        "question": "Quelle est une caractéristique clé des Data Lakes ?",
+        "choices": [
+          "Les données sont préalablement transformées avant stockage",
+          "Ils utilisent un schéma à l'écriture",
+          "Ils permettent de conserver les données sous leur forme brute",
+          "Ils nécessitent un ETL strict avant ingestion"
+        ],
+        "answer": [2]
+      },
+      {
+        "question": "Quelle plateforme a joué un rôle majeur dans l’essor des Data Lakes ?",
+        "choices": [
+          "Oracle Database",
+          "Apache Hadoop",
+          "Microsoft SQL Server",
+          "MongoDB"
+        ],
+        "answer": [1]
+      },
+      {
+        "question": "Quelle est la différence principale entre Data Lakes et Data Warehouses ?",
+        "choices": [
+          "Les Data Warehouses sont plus flexibles",
+          "Les Data Lakes stockent les données dans leur format brut",
+          "Les Data Warehouses sont conçus pour des analyses exploratoires",
+          "Les Data Lakes utilisent un schéma à l'écriture"
+        ],
+        "answer": [1]
+      },
+      {
+        "question": "Quel est un inconvénient potentiel des Data Lakes ?",
+        "choices": [
+          "Une perte d’historique des données",
+          "Un coût de stockage élevé",
+          "Le risque de devenir un Data Swamp",
+          "Une incapacité à stocker des données non structurées"
+        ],
+        "answer": [2]
+      },
+      {
+        "question": "Quel concept est associé aux Data Lakes pour organiser les données en couches ?",
+        "choices": [
+          "ETL/ELT",
+          "L'architecture Lambda",
+          "Les couches Bronze, Silver et Gold",
+          "Le stockage relationnel"
+        ],
+        "answer": [2]
+      },
+      {
+        "question": "Quelle est la fonction principale de la couche Bronze dans un Data Lake ?",
+        "choices": [
+          "Stocker les données sous forme brute",
+          "Nettoyer et transformer les données",
+          "Agréger les données pour les rapports",
+          "Exécuter des requêtes SQL sur les données"
+        ],
+        "answer": [0]
+      },
+      {
+        "question": "Pourquoi les Data Lakes sont-ils adaptés au Machine Learning ?",
+        "choices": [
+          "Parce qu'ils imposent un format unique pour les données",
+          "Parce qu'ils permettent d'exécuter uniquement des requêtes SQL",
+          "Parce qu'ils stockent de grandes quantités de données variées",
+          "Parce qu'ils imposent une structuration stricte des données"
+        ],
+        "answer": [2]
+      },
+      {
+        "question": "Quel mode de gestion des données est typiquement utilisé dans un Data Lake ?",
+        "choices": [
+          "Schema-on-Write",
+          "Schema-on-Read",
+          "Modèle relationnel strict",
+          "Indexation obligatoire avant stockage"
+        ],
+        "answer": [1]
+      },
+      {
+        "question": "Quelle technologie est souvent utilisée pour traiter les données dans un Data Lake ?",
+        "choices": [
+          "MySQL",
+          "PostgreSQL",
+          "Apache Spark",
+          "Microsoft Access"
+        ],
+        "answer": [2]
+      },
+      {
+        "question": "Quelle est une application typique des Data Warehouses ?",
+        "choices": [
+          "Stockage de vidéos brutes",
+          "Analyse de tendances historiques pour la Business Intelligence",
+          "Stockage de logs en temps réel",
+          "Prétraitement pour les modèles de deep learning"
+        ],
+        "answer": [1]
+      },
+      {
+        "question": "Dans quelle couche du Data Lake les données sont-elles nettoyées et préparées ?",
+        "choices": [
+          "Bronze",
+          "Silver",
+          "Gold",
+          "Raw"
+        ],
+        "answer": [1]
+      },
+      {
+        "question": "Quel est l'objectif principal de la couche Gold dans un Data Lake ?",
+        "choices": [
+          "Stocker les données brutes",
+          "Préparer les données pour des analyses décisionnelles",
+          "Effectuer des requêtes SQL",
+          "Gérer les métadonnées"
+        ],
+        "answer": [1]
+      },
+      {
+        "question": "Quel type d'organisation de stockage permet aux Data Lakes d'être scalables ?",
+        "choices": [
+          "Stockage centralisé avec serveurs dédiés",
+          "Stockage sur bande magnétique",
+          "Stockage distribué et évolutif",
+          "Bases de données relationnelles"
+        ],
+        "answer": [2]
+      }
+    ]
+  }
+  

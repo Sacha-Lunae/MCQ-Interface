@@ -1,0 +1,155 @@
+{
+    "qcm": [
+      {
+        "question": "Quelle est la principale caractéristique du stockage Blob Storage ?",
+        "choices": [
+          "Il suit une structure hiérarchique",
+          "Il est optimisé pour les bases de données relationnelles",
+          "Il est conçu pour stocker des objets binaires",
+          "Il ne peut pas être utilisé pour le Big Data"
+        ],
+        "answer": [2]
+      },
+      {
+        "question": "Quelle est la fonction principale de la couche Curated (Gold) dans un Data Lake ?",
+        "choices": [
+          "Stocker des données brutes sans transformation",
+          "Nettoyer et structurer les données",
+          "Fournir des données prêtes pour l’analyse et le machine learning",
+          "Indexer les données pour améliorer la recherche"
+        ],
+        "answer": [2]
+      },
+      {
+        "question": "Quels sont les trois niveaux de stockage dans un Data Lake ?",
+        "choices": [
+          "Bronze, Silver, Gold",
+          "Raw, Structured, Query",
+          "Primary, Secondary, Archived",
+          "Temporary, Processed, Analyzed"
+        ],
+        "answer": [0]
+      },
+      {
+        "question": "Quel est l’un des principaux avantages du Schema-on-Read ?",
+        "choices": [
+          "Les données doivent être transformées avant ingestion",
+          "Il permet une ingestion rapide des données brutes",
+          "Il réduit la flexibilité des formats de données",
+          "Il nécessite une forte normalisation des données"
+        ],
+        "answer": [1]
+      },
+      {
+        "question": "Quels types de fichiers peuvent être stockés dans un Blob Storage ?",
+        "choices": [
+          "Uniquement des fichiers CSV",
+          "Uniquement des bases de données relationnelles",
+          "Des fichiers de tout type, qu’ils soient structurés, semi-structurés ou non structurés",
+          "Uniquement des fichiers de logs"
+        ],
+        "answer": [2]
+      },
+      {
+        "question": "Quelle classe de stockage est optimisée pour des données rarement utilisées mais nécessitant un accès rapide ?",
+        "choices": [
+          "Hot Storage",
+          "Cool Storage",
+          "Archive Storage",
+          "Cold Storage"
+        ],
+        "answer": [1]
+      },
+      {
+        "question": "Pourquoi le File Storage reste-t-il pertinent dans certains cas d’usage ?",
+        "choices": [
+          "Parce qu’il est plus évolutif que le Blob Storage",
+          "Parce qu’il offre une meilleure gestion hiérarchique des fichiers",
+          "Parce qu’il est exclusivement utilisé dans les Data Lakes",
+          "Parce qu’il ne prend en charge que les bases de données relationnelles"
+        ],
+        "answer": [1]
+      },
+      {
+        "question": "Quel protocole est couramment utilisé pour accéder aux fichiers dans un File Storage ?",
+        "choices": [
+          "HTTP",
+          "SQL",
+          "NFS",
+          "GraphQL"
+        ],
+        "answer": [2]
+      },
+      {
+        "question": "Quel type de base de données est généralement utilisé pour des données fortement structurées ?",
+        "choices": [
+          "SQL",
+          "NoSQL",
+          "GraphDB",
+          "Key-Value Store"
+        ],
+        "answer": [0]
+      },
+      {
+        "question": "Quel est un avantage des bases NoSQL dans un Data Lake ?",
+        "choices": [
+          "Elles nécessitent une structure de données fixe",
+          "Elles permettent d’ingérer des données sans structure prédéfinie",
+          "Elles ne supportent pas les requêtes complexes",
+          "Elles ne sont pas scalables"
+        ],
+        "answer": [1]
+      },
+      {
+        "question": "Pourquoi les bases SQL sont-elles utilisées dans la zone Staging d’un Data Lake ?",
+        "choices": [
+          "Pour stocker des fichiers binaires",
+          "Pour normaliser et structurer les données avant leur analyse",
+          "Parce qu’elles sont plus évolutives que les bases NoSQL",
+          "Parce qu’elles permettent uniquement le stockage d’images et de vidéos"
+        ],
+        "answer": [1]
+      },
+      {
+        "question": "Quel est un des principaux inconvénients des bases NoSQL ?",
+        "choices": [
+          "Elles ont une faible scalabilité",
+          "Elles manquent de standardisation et de compatibilité entre différentes solutions",
+          "Elles ne permettent pas de stocker des données non structurées",
+          "Elles ne sont pas adaptées aux environnements distribués"
+        ],
+        "answer": [1]
+      },
+      {
+        "question": "Quel est un cas d’usage typique des bases NoSQL dans un Data Lake ?",
+        "choices": [
+          "Stockage et indexation de logs applicatifs",
+          "Stockage de données strictement tabulaires",
+          "Analyses transactionnelles sur des données bancaires",
+          "Normalisation et structuration de données relationnelles"
+        ],
+        "answer": [0]
+      },
+      {
+        "question": "Pourquoi les bases SQL et NoSQL sont-elles complémentaires dans un Data Lake ?",
+        "choices": [
+          "Parce que les bases SQL ne peuvent pas fonctionner sans NoSQL",
+          "Parce qu’elles répondent à des besoins différents en fonction des types de données et des cas d’usage",
+          "Parce que NoSQL est une technologie plus récente",
+          "Parce qu’elles utilisent toutes les deux exclusivement un schéma fixe"
+        ],
+        "answer": [1]
+      },
+      {
+        "question": "Pourquoi LocalStack a-t-il été utilisé dans le TP2 ?",
+        "choices": [
+          "Pour simuler un service de stockage cloud comme S3",
+          "Pour exécuter des requêtes SQL sur un Data Lake",
+          "Pour transformer les données en temps réel",
+          "Pour gérer les transactions bancaires"
+        ],
+        "answer": [0]
+      }
+    ]
+  }
+  

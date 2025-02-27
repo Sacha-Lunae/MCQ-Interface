@@ -1,0 +1,155 @@
+{
+    "qcm": [
+      {
+        "question": "Que signifie l'acronyme DAG dans Apache Airflow ?",
+        "choices": [
+          "Data Analysis Graph",
+          "Directed Acyclic Graph",
+          "Distributed Automated Graph",
+          "Data Aggregation Grid"
+        ],
+        "answer": [1]
+      },
+      {
+        "question": "Quelle est la principale caractéristique d’un DAG ?",
+        "choices": [
+          "Il contient des cycles",
+          "Il est basé sur une structure hiérarchique",
+          "Il ne contient aucun cycle",
+          "Il utilise un algorithme de compression"
+        ],
+        "answer": [2]
+      },
+      {
+        "question": "Pourquoi Apache Airflow utilise-t-il les DAGs ?",
+        "choices": [
+          "Pour assurer un ordonnancement clair des tâches",
+          "Pour stocker les données en base de données",
+          "Pour exécuter des modèles de machine learning",
+          "Pour compresser les fichiers volumineux"
+        ],
+        "answer": [0]
+      },
+      {
+        "question": "Quel composant d'Airflow est responsable de l'exécution des tâches ?",
+        "choices": [
+          "Webserver",
+          "Scheduler",
+          "Worker",
+          "Metadata Database"
+        ],
+        "answer": [2]
+      },
+      {
+        "question": "Quel langage de programmation est utilisé pour définir les DAGs dans Airflow ?",
+        "choices": [
+          "Java",
+          "Python",
+          "SQL",
+          "Bash"
+        ],
+        "answer": [1]
+      },
+      {
+        "question": "Quel composant d'Airflow est responsable de la gestion des exécutions planifiées ?",
+        "choices": [
+          "Worker",
+          "Scheduler",
+          "Executor",
+          "Triggerer"
+        ],
+        "answer": [1]
+      },
+      {
+        "question": "Quelle est la fonction principale du Webserver dans Airflow ?",
+        "choices": [
+          "Exécuter les tâches des DAGs",
+          "Orchestrer les workflows",
+          "Fournir une interface utilisateur pour gérer les DAGs",
+          "Stocker les métadonnées des DAGs"
+        ],
+        "answer": [2]
+      },
+      {
+        "question": "Quel paramètre permet de planifier l'exécution d'un DAG à une fréquence donnée ?",
+        "choices": [
+          "schedule_interval",
+          "dag_id",
+          "retry_delay",
+          "max_active_runs"
+        ],
+        "answer": [0]
+      },
+      {
+        "question": "Quelle est la commande pour initialiser la base de données d’Airflow ?",
+        "choices": [
+          "airflow webserver init",
+          "airflow db init",
+          "airflow scheduler start",
+          "airflow dag create"
+        ],
+        "answer": [1]
+      },
+      {
+        "question": "Quel est le rôle de la fonction XCom dans Airflow ?",
+        "choices": [
+          "Exécuter un DAG",
+          "Planifier un DAG",
+          "Partager des données entre tâches",
+          "Créer une base de données pour stocker les DAGs"
+        ],
+        "answer": [2]
+      },
+      {
+        "question": "Quel mode d'exécution d'Airflow est utilisé pour l'exécution distribuée des tâches ?",
+        "choices": [
+          "SequentialExecutor",
+          "LocalExecutor",
+          "CeleryExecutor",
+          "DebugExecutor"
+        ],
+        "answer": [2]
+      },
+      {
+        "question": "Quelle est la principale différence entre DVC et Airflow ?",
+        "choices": [
+          "DVC gère les workflows basés sur les fichiers, Airflow sur les tâches",
+          "DVC est utilisé pour la business intelligence",
+          "Airflow ne permet pas d'exécuter des DAGs",
+          "DVC ne supporte pas les fichiers YAML"
+        ],
+        "answer": [0]
+      },
+      {
+        "question": "Quelle est la syntaxe pour créer une tâche dans un DAG Airflow ?",
+        "choices": [
+          "@task dans un DAG",
+          "def task() dans un DAG",
+          "create_task() dans un DAG",
+          "task.create() dans un DAG"
+        ],
+        "answer": [0]
+      },
+      {
+        "question": "Quel paramètre empêche Airflow d'exécuter rétroactivement les tâches manquées d'un DAG ?",
+        "choices": [
+          "schedule_interval=False",
+          "retry_delay=0",
+          "catchup=False",
+          "dag_id=None"
+        ],
+        "answer": [2]
+      },
+      {
+        "question": "Quel mécanisme permet à Airflow de réessayer l'exécution d'une tâche en cas d'échec ?",
+        "choices": [
+          "retry_delay et retries",
+          "task_retry",
+          "failover_delay",
+          "reschedule_interval"
+        ],
+        "answer": [0]
+      }
+    ]
+  }
+  
