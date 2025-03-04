@@ -10,14 +10,24 @@ class QCMApp:
         self.root.title("QCM Interface")
         self.data_folder = data_folder
 
-        # Création et configuration du style pour les Checkbuttons
-        self.style = ttk.Style()
-        self.style.configure("TCheckbutton", font=("Helvetica", 16))
+        # Facteur de zoom initial
+        self.font_scale = 1.0
+        self.base_question_font = 18
+        self.base_option_font = 16
+        self.base_result_font = 16
+        self.base_button_font = 16
 
+        # Configuration du style
+        self.style = ttk.Style()
+        # Configure le style pour les Checkbuttons
+        self.style.configure("TCheckbutton", font=("Helvetica", int(self.base_option_font * self.font_scale)))
+
+        # Initialisation des questions
         self.questions = self.load_questions()
         self.current_question_index = 0
         
         self.setup_ui()
+        self.update_fonts()
         self.display_question()
 
     def load_questions(self):
@@ -34,7 +44,15 @@ class QCMApp:
 
     def setup_ui(self):
         """Configure l'interface utilisateur."""
-        self.question_label = ttk.Label(self.root, text="", wraplength=600, font=("Helvetica", 18), justify=LEFT)
+        # Cadre pour les boutons de zoom
+        self.zoom_frame = ttk.Frame(self.root)
+        self.zoom_frame.pack(pady=10)
+        self.zoom_in_button = ttk.Button(self.zoom_frame, text="Zoom In", command=self.zoom_in, bootstyle=INFO)
+        self.zoom_in_button.pack(side="left", padx=5)
+        self.zoom_out_button = ttk.Button(self.zoom_frame, text="Zoom Out", command=self.zoom_out, bootstyle=INFO)
+        self.zoom_out_button.pack(side="left", padx=5)
+
+        self.question_label = ttk.Label(self.root, text="", wraplength=600, justify=LEFT)
         self.question_label.pack(pady=20)
 
         self.options_frame = ttk.Frame(self.root)
@@ -43,12 +61,39 @@ class QCMApp:
         self.validate_button = ttk.Button(self.root, text="Valider", command=self.validate_answer, bootstyle=PRIMARY)
         self.validate_button.pack(pady=10)
 
-        self.result_label = ttk.Label(self.root, text="", font=("Helvetica", 16, "bold"))
+        self.result_label = ttk.Label(self.root, text="", font=("Helvetica", int(self.base_result_font * self.font_scale), "bold"))
         self.result_label.pack()
 
         self.next_button = ttk.Button(self.root, text="Suivant", command=self.next_question, bootstyle=SUCCESS)
         self.next_button.pack(pady=10)
         self.next_button.pack_forget()
+
+    def update_fonts(self):
+        """Met à jour la taille des polices en fonction du facteur de zoom."""
+        question_font = ("Helvetica", int(self.base_question_font * self.font_scale))
+        option_font = ("Helvetica", int(self.base_option_font * self.font_scale))
+        result_font = ("Helvetica", int(self.base_result_font * self.font_scale), "bold")
+        button_font = ("Helvetica", int(self.base_button_font * self.font_scale))
+        
+        self.question_label.config(font=question_font)
+        self.result_label.config(font=result_font)
+        # Met à jour le style des Checkbuttons
+        self.style.configure("TCheckbutton", font=option_font)
+        # Met à jour les styles des boutons selon leur bootstyle
+        self.style.configure("Primary.TButton", font=button_font)
+        self.style.configure("Success.TButton", font=button_font)
+        self.style.configure("Info.TButton", font=button_font)
+        
+    def zoom_in(self):
+        """Augmente le facteur de zoom et met à jour les polices."""
+        self.font_scale += 0.1
+        self.update_fonts()
+
+    def zoom_out(self):
+        """Diminue le facteur de zoom et met à jour les polices."""
+        if self.font_scale > 0.2:
+            self.font_scale -= 0.1
+            self.update_fonts()
 
     def display_question(self):
         """Affiche la question actuelle avec ses options."""
@@ -66,7 +111,7 @@ class QCMApp:
         self.question_label.config(text=question_data["question"])
 
         self.answer_vars = []
-        # Affichage des options sans définir directement la police
+        # Affichage des options; la police est définie via le style "TCheckbutton"
         for i, choice in enumerate(question_data["choices"]):
             var = ttk.IntVar(value=0)
             chk = ttk.Checkbutton(self.options_frame, text=choice, variable=var)
