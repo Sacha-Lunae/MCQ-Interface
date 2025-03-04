@@ -1,0 +1,205 @@
+{
+    "qcm": [
+      {
+        "question": "Qu'est-ce qu'un Markov Decision Process (MDP) ?",
+        "choices": [
+          "Un modèle pour la prise de décision séquentielle sous incertitude",
+          "Un algorithme d'apprentissage supervisé",
+          "Un type de réseau de neurones",
+          "Un modèle déterministe de prise de décision"
+        ],
+        "answer": [0]
+      },
+      {
+        "question": "Quels sont les éléments qui définissent un MDP ?",
+        "choices": [
+          "Un ensemble d'états",
+          "Un ensemble d'actions",
+          "Une distribution de transition d'état",
+          "Un algorithme de deep learning"
+        ],
+        "answer": [0, 1, 2]
+      },
+      {
+        "question": "Qu'est-ce qu'un état terminal dans un MDP ?",
+        "choices": [
+          "Un état où le processus s'arrête",
+          "Un état où toutes les actions sont disponibles",
+          "Un état dont la probabilité de transition est nulle",
+          "Un état où la politique est aléatoire"
+        ],
+        "answer": [0]
+      },
+      {
+        "question": "Quelle est la formule de la somme des probabilités de transition d'un état donné dans un MDP ?",
+        "choices": [
+          "∑ p(s'|s, a) = 1",
+          "∑ p(r|s, a) = 1",
+          "∑ π(a|s) = 1",
+          "∑ s' V(s') = 1"
+        ],
+        "answer": [0]
+      },
+      {
+        "question": "Qu'est-ce qu'une politique (policy) dans un MDP ?",
+        "choices": [
+          "Une distribution de probabilité sur les actions en fonction des états",
+          "Un ensemble de récompenses cumulées",
+          "Un réseau de neurones entraîné pour la prise de décision",
+          "Une suite d'états déterministes"
+        ],
+        "answer": [0]
+      },
+      {
+        "question": "Qu'est-ce qu'une politique déterministe ?",
+        "choices": [
+          "Une politique où une action unique est choisie pour chaque état",
+          "Une politique qui maximise le gain",
+          "Une politique qui prend en compte toutes les actions possibles",
+          "Une politique où la sélection d'actions est aléatoire"
+        ],
+        "answer": [0]
+      },
+      {
+        "question": "Que signifie une politique stochastique ?",
+        "choices": [
+          "Une politique qui attribue des probabilités aux actions possibles",
+          "Une politique où une action unique est choisie à chaque état",
+          "Une politique qui ne dépend pas de l'état actuel",
+          "Une politique qui ne suit pas les principes d'un MDP"
+        ],
+        "answer": [0]
+      },
+      {
+        "question": "Quel est l'objectif principal de l'apprentissage par renforcement ?",
+        "choices": [
+          "Maximiser la somme des récompenses obtenues sur le long terme",
+          "Minimiser le nombre d'états visités",
+          "Trouver un réseau de neurones optimal",
+          "Minimiser la complexité du modèle"
+        ],
+        "answer": [0]
+      },
+      {
+        "question": "Quelle est la formule du gain dans un MDP avec un facteur d'actualisation γ ?",
+        "choices": [
+          "G = r0 + γr1 + γ²r2 + ...",
+          "G = r0 + r1 + r2 + ...",
+          "G = max(r) pour tous les états",
+          "G = r0 - γr1 - γ²r2 - ..."
+        ],
+        "answer": [0]
+      },
+      {
+        "question": "Pourquoi le facteur d'actualisation γ est-il choisi entre 0 et 1 ?",
+        "choices": [
+          "Pour garantir la convergence des sommes infinies",
+          "Pour éviter que le gain total soit infini",
+          "Parce que les valeurs supérieures à 1 n'ont pas de sens en apprentissage par renforcement",
+          "Parce qu'il représente un taux d'apprentissage"
+        ],
+        "answer": [0, 1, 2]
+      },
+      {
+        "question": "Que représente la fonction de valeur Vπ(s) d'une politique π ?",
+        "choices": [
+          "L'espérance du gain total en partant de l'état s",
+          "Le nombre de fois où l'état s est visité",
+          "Le nombre d'actions disponibles depuis s",
+          "La somme des récompenses immédiates à s"
+        ],
+        "answer": [0]
+      },
+      {
+        "question": "Quelle équation permet de calculer la fonction de valeur d'une politique ?",
+        "choices": [
+          "L'équation de Bellman",
+          "L'algorithme de Dijkstra",
+          "L'équation de Boltzmann",
+          "L'équation de Bayes"
+        ],
+        "answer": [0]
+      },
+      {
+        "question": "Quel est le principe de l'équation de Bellman ?",
+        "choices": [
+          "Décomposer le problème en sous-problèmes en utilisant la propriété de Markov",
+          "Maximiser la récompense immédiate",
+          "Utiliser une approximation de Monte Carlo",
+          "Ne pas prendre en compte les transitions d'états"
+        ],
+        "answer": [0]
+      },
+      {
+        "question": "Comment résoudre l'équation de Bellman dans un MDP ?",
+        "choices": [
+          "Par inversion matricielle",
+          "Par approximation avec une méthode itérative",
+          "Par descente de gradient",
+          "Par transformation de Fourier"
+        ],
+        "answer": [0, 1]
+      },
+      {
+        "question": "Pourquoi la méthode des points fixes est-elle utilisée pour approximer la solution de l'équation de Bellman ?",
+        "choices": [
+          "Parce que l'itération converge géométriquement",
+          "Parce qu'elle réduit la complexité de calcul",
+          "Parce qu'elle garantit une solution unique pour γ < 1",
+          "Parce qu'elle est inspirée de l'algèbre linéaire"
+        ],
+        "answer": [0, 1, 2]
+      },
+      {
+        "question": "Quel est le coût de calcul d'une solution exacte de l'équation de Bellman ?",
+        "choices": [
+          "O(n³)",
+          "O(n²)",
+          "O(log n)",
+          "O(n!)"
+        ],
+        "answer": [0]
+      },
+      {
+        "question": "Pourquoi l'approximation par itération fixe est-elle plus efficace en pratique ?",
+        "choices": [
+          "Parce qu'elle réduit le coût de calcul à O(kn²)",
+          "Parce qu'elle ne nécessite pas d'inversion matricielle",
+          "Parce qu'elle peut être parallélisée",
+          "Parce qu'elle utilise l'équation de Boltzmann"
+        ],
+        "answer": [0, 1, 2]
+      },
+      {
+        "question": "Quel théorème garantit la convergence de l'approximation par itération fixe ?",
+        "choices": [
+          "Le théorème du point fixe de Banach",
+          "Le théorème de Cauchy",
+          "Le théorème de Markov",
+          "Le théorème de Bellman"
+        ],
+        "answer": [0]
+      },
+      {
+        "question": "Que représente la norme sup dans la preuve de convergence de l'équation de Bellman ?",
+        "choices": [
+          "Une mesure de la distance entre deux approximations successives",
+          "Une borne supérieure sur la fonction de valeur",
+          "Un moyen d'éviter les oscillations",
+          "Une propriété qui empêche la divergence"
+        ],
+        "answer": [0]
+      },
+      {
+        "question": "Quelle est la principale difficulté de l'apprentissage par renforcement ?",
+        "choices": [
+          "L'exploration vs l'exploitation",
+          "La taille de l'espace des états",
+          "La convergence des politiques",
+          "Le manque d'algorithmes adaptés"
+        ],
+        "answer": [0, 1, 2]
+      }
+    ]
+  }
+  

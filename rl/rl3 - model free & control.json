@@ -1,0 +1,195 @@
+{
+    "qcm": [
+      {
+        "question": "Qu'est-ce qu'un agent en apprentissage par renforcement ?",
+        "choices": [
+          "Le système qui prend des actions pour être entraîné",
+          "L'environnement avec lequel l'agent interagit",
+          "Un état dans lequel l'agent se trouve",
+          "Une action effectuée par l'agent"
+        ],
+        "answer": [0]
+      },
+      {
+        "question": "Que signifie le dilemme exploration-exploitation en RL ?",
+        "choices": [
+          "Choisir entre essayer de nouvelles actions pour découvrir des résultats potentiellement meilleurs",
+          "Toujours choisir les actions ayant donné les meilleures récompenses par le passé",
+          "Maximiser uniquement la récompense immédiate",
+          "Éviter complètement les actions inconnues"
+        ],
+        "answer": [0, 1]
+      },
+      {
+        "question": "Quels sont les avantages de l'exploration en RL ?",
+        "choices": [
+          "Découvrir des stratégies plus optimales",
+          "Éviter de rester bloqué dans une solution sous-optimale",
+          "Améliorer immédiatement la récompense obtenue",
+          "Minimiser le risque d'apprendre une mauvaise politique"
+        ],
+        "answer": [0, 1]
+      },
+      {
+        "question": "Qu'est-ce qu'une méthode Model-Free en RL ?",
+        "choices": [
+          "Une méthode qui apprend directement à partir de l'interaction avec l'environnement",
+          "Une méthode nécessitant un modèle explicite de l'environnement",
+          "Une approche qui repose sur les transitions d'états connues",
+          "Une technique utilisée uniquement pour les petits espaces d'états"
+        ],
+        "answer": [0]
+      },
+      {
+        "question": "Quels sont les principaux types de méthodes Model-Free en RL ?",
+        "choices": [
+          "Les méthodes Monte Carlo",
+          "Les méthodes de programmation dynamique",
+          "Les méthodes d'apprentissage par différences temporelles (TD)",
+          "Les réseaux de neurones profonds"
+        ],
+        "answer": [0, 2]
+      },
+      {
+        "question": "Quelle est la différence entre les méthodes Monte Carlo et Temporal Difference ?",
+        "choices": [
+          "Monte Carlo nécessite des épisodes complets pour effectuer des mises à jour",
+          "TD met à jour les valeurs à chaque étape, sans attendre la fin d'un épisode",
+          "Monte Carlo est plus rapide à converger que TD",
+          "TD est inadapté aux environnements en temps réel"
+        ],
+        "answer": [0, 1]
+      },
+      {
+        "question": "Comment fonctionne l'évaluation de politique avec Monte Carlo ?",
+        "choices": [
+          "En estimant la valeur d'un état en prenant la moyenne des retours observés",
+          "En mettant à jour les valeurs après chaque transition d'état",
+          "En nécessitant une fonction de transition connue",
+          "En calculant directement la meilleure action à chaque étape"
+        ],
+        "answer": [0]
+      },
+      {
+        "question": "Quelle est la différence entre First-Visit et Every-Visit Monte Carlo ?",
+        "choices": [
+          "First-Visit met à jour V(s) seulement lors de la première visite de s dans un épisode",
+          "Every-Visit met à jour V(s) à chaque occurrence de s dans un épisode",
+          "First-Visit est plus précis que Every-Visit",
+          "Every-Visit est plus efficace pour des environnements continus"
+        ],
+        "answer": [0, 1]
+      },
+      {
+        "question": "Qu'est-ce que le bootstrapping dans les méthodes TD ?",
+        "choices": [
+          "L'utilisation d'estimations pour mettre à jour d'autres estimations",
+          "L'attente de la fin d'un épisode pour calculer une mise à jour",
+          "L'application d'une mise à jour basée uniquement sur des données historiques",
+          "L'utilisation d'un modèle explicite de l'environnement"
+        ],
+        "answer": [0]
+      },
+      {
+        "question": "Quel est l'objectif des méthodes TD Learning ?",
+        "choices": [
+          "Mettre à jour les valeurs des états après chaque étape",
+          "Attendre la fin des épisodes pour faire des mises à jour",
+          "Éviter complètement l'exploration",
+          "Prédire directement la meilleure action à chaque état"
+        ],
+        "answer": [0]
+      },
+      {
+        "question": "Pourquoi les méthodes TD peuvent apprendre plus rapidement que Monte Carlo ?",
+        "choices": [
+          "Parce qu'elles mettent à jour les valeurs à chaque étape",
+          "Parce qu'elles utilisent l'apprentissage hors-ligne",
+          "Parce qu'elles ne nécessitent pas d'épisodes complets",
+          "Parce qu'elles utilisent des approximations stochastiques"
+        ],
+        "answer": [0, 2]
+      },
+      {
+        "question": "Quel algorithme appartient aux méthodes TD ?",
+        "choices": [
+          "TD(0)",
+          "SARSA",
+          "Q-Learning",
+          "Monte Carlo"
+        ],
+        "answer": [0, 1, 2]
+      },
+      {
+        "question": "Quelle est la principale différence entre SARSA et Q-Learning ?",
+        "choices": [
+          "SARSA est une méthode on-policy alors que Q-Learning est off-policy",
+          "Q-Learning apprend la politique optimale indépendamment de la politique suivie",
+          "SARSA met à jour ses valeurs en fonction de l'action réellement prise",
+          "Q-Learning est toujours supérieur à SARSA"
+        ],
+        "answer": [0, 1, 2]
+      },
+      {
+        "question": "Pourquoi Q-Learning est considéré comme une méthode off-policy ?",
+        "choices": [
+          "Parce qu'il met à jour ses valeurs avec la meilleure action possible",
+          "Parce qu'il suit une politique aléatoire",
+          "Parce qu'il apprend une politique différente de celle suivie durant l'entraînement",
+          "Parce qu'il ne met pas à jour les valeurs des états non visités"
+        ],
+        "answer": [0, 2]
+      },
+      {
+        "question": "Qu'est-ce qu'une politique epsilon-greedy en RL ?",
+        "choices": [
+          "Une politique qui choisit principalement l'action optimale mais explore parfois aléatoirement",
+          "Une politique qui ne prend que des décisions aléatoires",
+          "Une politique qui assure une exploration constante",
+          "Une méthode utilisée uniquement pour les environnements déterministes"
+        ],
+        "answer": [0]
+      },
+      {
+        "question": "Pourquoi utiliser une politique epsilon-greedy en RL ?",
+        "choices": [
+          "Pour garantir un certain niveau d'exploration",
+          "Pour éviter la convergence prématurée vers une solution sous-optimale",
+          "Pour toujours choisir la meilleure action à chaque instant",
+          "Pour empêcher l'agent de revisiter les mêmes états"
+        ],
+        "answer": [0, 1]
+      },
+      {
+        "question": "Quelle est la différence entre on-policy et off-policy en RL ?",
+        "choices": [
+          "On-policy met à jour la politique qu'il suit, tandis que off-policy apprend une politique différente",
+          "Off-policy est plus efficace que on-policy",
+          "On-policy est utilisé uniquement dans les jeux",
+          "Off-policy ne peut pas apprendre à partir d'une politique exploratoire"
+        ],
+        "answer": [0]
+      },
+      {
+        "question": "Quelle technique est utilisée en off-policy learning pour estimer une autre politique ?",
+        "choices": [
+          "Importance Sampling",
+          "Backpropagation",
+          "Échantillonnage aléatoire",
+          "Filtrage de Kalman"
+        ],
+        "answer": [0]
+      },
+      {
+        "question": "Quel est le rôle de l'importance sampling en RL ?",
+        "choices": [
+          "Utiliser des données collectées sous une politique pour estimer les performances d'une autre politique",
+          "Mettre à jour les valeurs en fonction des transitions observées",
+          "Assurer un équilibre entre exploration et exploitation",
+          "Améliorer la précision des prédictions immédiates"
+        ],
+        "answer": [0]
+      }
+    ]
+  }
+  

@@ -1,0 +1,195 @@
+{
+    "qcm": [
+      {
+        "question": "Qu'est-ce que la programmation dynamique ?",
+        "choices": [
+          "Une technique d'optimisation récursive",
+          "Un algorithme de machine learning supervisé",
+          "Une méthode applicable aux problèmes où le modèle est connu",
+          "Une variante de l'apprentissage non supervisé"
+        ],
+        "answer": [0, 2]
+      },
+      {
+        "question": "Comment définit-on une politique optimale π⋆ ?",
+        "choices": [
+          "Une politique qui est meilleure que toutes les autres",
+          "Une politique qui maximise la fonction de valeur",
+          "Une politique qui minimise la variance des récompenses",
+          "Une politique qui assure un apprentissage rapide"
+        ],
+        "answer": [0, 1]
+      },
+      {
+        "question": "Qu'est-ce que la fonction de valeur optimale V⋆ ?",
+        "choices": [
+          "La solution de l'équation d'optimalité de Bellman",
+          "Une fonction qui dépend uniquement de la politique suivie",
+          "Une approximation de la récompense immédiate",
+          "La meilleure fonction de valeur pour tous les états"
+        ],
+        "answer": [0, 3]
+      },
+      {
+        "question": "Quelle équation définit la fonction de valeur optimale V⋆ ?",
+        "choices": [
+          "V(s) = max_a E(r0 + γV(s1) | s0 = s, a0 = a)",
+          "V(s) = min_a E(r0 + γV(s1) | s0 = s, a0 = a)",
+          "V(s) = Σ p(s' | s, a) V(s')",
+          "V(s) = r(s) + γ Σ V(s')"
+        ],
+        "answer": [0]
+      },
+      {
+        "question": "Pourquoi la fonction de valeur optimale V⋆ est-elle unique ?",
+        "choices": [
+          "Elle est définie comme le point fixe d'une fonction contractante",
+          "Elle est obtenue par une méthode itérative",
+          "Elle est définie uniquement si γ > 1",
+          "Elle est obtenue par interpolation polynomiale"
+        ],
+        "answer": [0, 1]
+      },
+      {
+        "question": "Quelle est la relation entre V⋆ et π⋆ ?",
+        "choices": [
+          "La politique optimale π⋆ maximise la fonction de valeur V⋆",
+          "Si une politique π maximise V(s) pour tous les états, alors π est optimale",
+          "Toute politique conduit à la même fonction de valeur optimale",
+          "V⋆ et π⋆ sont indépendants l’un de l’autre"
+        ],
+        "answer": [0, 1]
+      },
+      {
+        "question": "Quel est le principe de l'itération de politique ?",
+        "choices": [
+          "Améliorer progressivement une politique à partir de sa fonction de valeur",
+          "Trouver directement la politique optimale sans approximation",
+          "Calculer Vπ pour une politique donnée, puis mettre à jour la politique",
+          "Évaluer toutes les politiques possibles simultanément"
+        ],
+        "answer": [0, 2]
+      },
+      {
+        "question": "Pourquoi l'itération de politique converge-t-elle en un nombre fini d'étapes ?",
+        "choices": [
+          "Le nombre de politiques possibles est fini",
+          "L'algorithme suit un processus monotone",
+          "Les transitions d’état sont aléatoires",
+          "Les fonctions de valeur oscillent autour de la solution optimale"
+        ],
+        "answer": [0, 1]
+      },
+      {
+        "question": "Qu'est-ce que l'itération de valeur ?",
+        "choices": [
+          "Une méthode qui résout directement l'équation d'optimalité de Bellman",
+          "Une approche qui améliore une politique existante",
+          "Un algorithme utilisé uniquement pour les environnements continus",
+          "Une alternative plus efficace que l'itération de politique"
+        ],
+        "answer": [0, 3]
+      },
+      {
+        "question": "Pourquoi l'itération de valeur est-elle souvent préférée à l'itération de politique ?",
+        "choices": [
+          "Elle ne nécessite pas d’évaluer une politique entière à chaque étape",
+          "Elle converge plus rapidement pour des environnements de grande taille",
+          "Elle évite la nécessité d’un modèle de transition",
+          "Elle est applicable même lorsque le modèle est inconnu"
+        ],
+        "answer": [0, 1]
+      },
+      {
+        "question": "Quel est le critère d'arrêt de l'itération de valeur ?",
+        "choices": [
+          "La variation entre deux itérations successives est inférieure à un seuil",
+          "Toutes les valeurs de V(s) deviennent nulles",
+          "Toutes les actions ont une valeur identique",
+          "L'algorithme atteint une solution instable"
+        ],
+        "answer": [0]
+      },
+      {
+        "question": "Quel théorème garantit la convergence de l'itération de valeur ?",
+        "choices": [
+          "Le théorème du point fixe de Banach",
+          "Le théorème de Cauchy-Schwarz",
+          "Le théorème de Bellman",
+          "Le théorème de l'optimisation dynamique"
+        ],
+        "answer": [0]
+      },
+      {
+        "question": "Quelle est la complexité de l'itération de valeur ?",
+        "choices": [
+          "O(n³)",
+          "O(kn²) avec k le nombre d'itérations",
+          "O(log n)",
+          "O(n!)"
+        ],
+        "answer": [1]
+      },
+      {
+        "question": "Pourquoi la programmation dynamique est-elle efficace pour les MDPs ?",
+        "choices": [
+          "Elle décompose le problème en sous-problèmes plus petits",
+          "Elle utilise la propriété de Markov pour simplifier les calculs",
+          "Elle fonctionne même lorsque le modèle est inconnu",
+          "Elle permet d'éviter les calculs inutiles"
+        ],
+        "answer": [0, 1, 3]
+      },
+      {
+        "question": "Quel est l'objectif de l'amélioration de politique ?",
+        "choices": [
+          "Obtenir une politique meilleure que l’actuelle",
+          "Réduire le nombre d'états à explorer",
+          "Maximiser la variance des récompenses",
+          "S'assurer que les actions sont choisies aléatoirement"
+        ],
+        "answer": [0]
+      },
+      {
+        "question": "Que garantit la monotonie dans l'amélioration de politique ?",
+        "choices": [
+          "Chaque mise à jour produit une politique au moins aussi bonne que la précédente",
+          "La convergence est garantie en un nombre infini d’étapes",
+          "Aucune mise à jour de politique ne peut détériorer la fonction de valeur",
+          "Elle empêche la divergence du processus d'optimisation"
+        ],
+        "answer": [0, 2]
+      },
+      {
+        "question": "Quel est le principe de l'approximation par points fixes ?",
+        "choices": [
+          "Utiliser une méthode itérative pour approcher la solution optimale",
+          "Évaluer toutes les actions possibles simultanément",
+          "Exécuter l’algorithme de façon récursive",
+          "Trouver une solution stable où V(s) ne change plus d'une itération à l'autre"
+        ],
+        "answer": [0, 3]
+      },
+      {
+        "question": "Pourquoi l'opérateur Bellman est-il contractant ?",
+        "choices": [
+          "Parce qu'il réduit la distance entre deux approximations successives",
+          "Parce qu'il garantit l'unicité de la solution",
+          "Parce qu'il permet de trouver la meilleure politique instantanément",
+          "Parce qu'il est basé sur la propriété de Markov"
+        ],
+        "answer": [0, 1, 3]
+      },
+      {
+        "question": "Quelles méthodes permettent d'accélérer la convergence de l'itération de valeur ?",
+        "choices": [
+          "L'utilisation de modèles approximatifs",
+          "L'échantillonnage aléatoire des états",
+          "L'algorithme de Gauss-Seidel",
+          "L'optimisation par interpolation linéaire"
+        ],
+        "answer": [0, 2]
+      }
+    ]
+  }
+  

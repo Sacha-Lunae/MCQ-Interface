@@ -5,7 +5,7 @@ import ttkbootstrap as ttk
 from ttkbootstrap.constants import *
 
 class QCMApp:
-    def __init__(self, root, data_folder="data"):
+    def __init__(self, root, data_folder="rl"):
         self.root = root
         self.root.title("QCM Interface")
         self.data_folder = data_folder
@@ -86,7 +86,7 @@ class QCMApp:
             self.result_label.config(text="Bonne réponse ! ✅", foreground="green")
         else:
             correct_choices = [self.questions[self.current_question_index]["choices"][i] for i in correct_answers]
-            self.result_label.config(text=f"Mauvaise réponse ❌\nRéponse correcte : {', '.join(correct_choices)}", foreground="red")
+            self.result_label.config(text=f"Mauvaise réponse ❌\nRéponse correcte : {'\n'.join(correct_choices)}", foreground="red")
 
         self.validate_button.pack_forget()
         self.next_button.pack()

@@ -1,0 +1,195 @@
+{
+    "qcm": [
+      {
+        "question": "Pourquoi la fonction de valeur doit-elle être approximée en RL ?",
+        "choices": [
+          "Les méthodes tabulaires échouent dans les espaces d'état de grande taille",
+          "L'approximation permet une généralisation entre les états",
+          "Elle est nécessaire uniquement pour les environnements déterministes",
+          "Elle simplifie la définition des politiques"
+        ],
+        "answer": [0, 1]
+      },
+      {
+        "question": "Quels types d'approximateurs de fonction peuvent être utilisés en RL ?",
+        "choices": [
+          "Combinaisons linéaires de features",
+          "Réseaux de neurones",
+          "Arbres de décision",
+          "Méthodes exactes de programmation dynamique"
+        ],
+        "answer": [0, 1, 2]
+      },
+      {
+        "question": "Quel est l'objectif de l'approximation de la fonction de valeur ?",
+        "choices": [
+          "Minimiser l'erreur entre l'approximation et la vraie valeur",
+          "Maximiser la récompense immédiate",
+          "Réduire la complexité des algorithmes RL",
+          "Éviter complètement l'utilisation des modèles de transition"
+        ],
+        "answer": [0]
+      },
+      {
+        "question": "Quel type de fonction d'erreur est généralement utilisé pour entraîner une approximation de fonction de valeur ?",
+        "choices": [
+          "Erreur quadratique moyenne (MSE)",
+          "Erreur logarithmique",
+          "Perte de Huber",
+          "Fonction de coût de Bellman"
+        ],
+        "answer": [0]
+      },
+      {
+        "question": "Pourquoi l'approximation non linéaire est-elle utilisée ?",
+        "choices": [
+          "Elle permet de modéliser des relations complexes entre les états",
+          "Elle est plus rapide que l'approximation linéaire",
+          "Elle fonctionne mieux pour les grands espaces d'états",
+          "Elle est nécessaire pour garantir la convergence des algorithmes RL"
+        ],
+        "answer": [0, 2]
+      },
+      {
+        "question": "Qu'est-ce que la généralisation en approximation de fonction de valeur ?",
+        "choices": [
+          "Une mise à jour de la valeur d'un état peut affecter d'autres états similaires",
+          "Un état ne peut être mis à jour que s'il a déjà été visité",
+          "Une fonction d'approximation ne dépend pas des valeurs des autres états",
+          "Elle permet d'éviter les problèmes de divergence dans les algorithmes RL"
+        ],
+        "answer": [0]
+      },
+      {
+        "question": "Qu'est-ce que la discrimination dans l'approximation de fonction de valeur ?",
+        "choices": [
+          "Les états sont traités de manière indépendante",
+          "Un état mis à jour influence fortement les valeurs des autres états",
+          "La fonction de valeur est mise à jour en fonction d'un gradient global",
+          "Elle empêche toute forme de généralisation"
+        ],
+        "answer": [0]
+      },
+      {
+        "question": "Comment l'approximation de la fonction de valeur peut-elle être vue comme un problème d'apprentissage supervisé ?",
+        "choices": [
+          "L'objectif est d'ajuster les poids d'un modèle pour minimiser une fonction de perte",
+          "Les cibles d'apprentissage sont les valeurs de retour obtenues en RL",
+          "L'approximation utilise des labels prédéfinis pour entraîner le modèle",
+          "Elle ne peut être appliquée qu'aux problèmes de classification"
+        ],
+        "answer": [0, 1]
+      },
+      {
+        "question": "Quelle est la principale différence entre Gradient Descent et Stochastic Gradient Descent (SGD) ?",
+        "choices": [
+          "Gradient Descent utilise l'ensemble des données, tandis que SGD utilise des échantillons aléatoires",
+          "SGD converge toujours plus rapidement",
+          "SGD met à jour les paramètres plus souvent, ce qui permet d'explorer plus d'optima locaux",
+          "Gradient Descent est toujours préféré à SGD"
+        ],
+        "answer": [0, 2]
+      },
+      {
+        "question": "Quelle est l'équation de mise à jour des paramètres dans Gradient Descent ?",
+        "choices": [
+          "w ← w - α * ∇L(w)",
+          "w ← w + α * L(w)",
+          "w ← w * α * ∇L(w)",
+          "w ← w - α * L(w)"
+        ],
+        "answer": [0]
+      },
+      {
+        "question": "Pourquoi l'utilisation de SGD est avantageuse pour l'approximation de fonction de valeur ?",
+        "choices": [
+          "Il permet de mettre à jour les paramètres plus fréquemment",
+          "Il réduit la complexité computationnelle",
+          "Il permet d'estimer une fonction de valeur sans modèle",
+          "Il assure une convergence garantie"
+        ],
+        "answer": [0, 1, 2]
+      },
+      {
+        "question": "Quelle est la version de TD Learning utilisée pour l'approximation de fonction de valeur ?",
+        "choices": [
+          "Semi-Gradient TD",
+          "Monte Carlo TD",
+          "Least Squares TD",
+          "Q-Learning TD"
+        ],
+        "answer": [0]
+      },
+      {
+        "question": "Pourquoi les méthodes TD ne suivent-elles pas directement un gradient bien défini ?",
+        "choices": [
+          "Elles utilisent une mise à jour basée sur une estimation et non sur une fonction de coût explicite",
+          "Elles convergent vers un optima local",
+          "Elles sont conçues pour fonctionner sans modèle",
+          "Elles nécessitent une approche par batch pour converger"
+        ],
+        "answer": [0, 2]
+      },
+      {
+        "question": "Qu'est-ce que le Tile Coding en RL ?",
+        "choices": [
+          "Une méthode permettant de représenter efficacement les espaces d'états continus",
+          "Une approche pour améliorer la convergence des approximations de fonction de valeur",
+          "Une technique basée sur des réseaux de neurones pour approximer la fonction de valeur",
+          "Un algorithme de contrôle par renforcement"
+        ],
+        "answer": [0, 1]
+      },
+      {
+        "question": "Quels sont les avantages du Tile Coding ?",
+        "choices": [
+          "Il améliore la généralisation des approximations de valeur",
+          "Il permet d'éviter la malédiction de la dimensionnalité",
+          "Il est principalement utilisé avec des réseaux de neurones profonds",
+          "Il permet une meilleure discrimination entre les états"
+        ],
+        "answer": [0, 1, 3]
+      },
+      {
+        "question": "Qu'est-ce que le Batch RL ?",
+        "choices": [
+          "Un apprentissage basé sur un ensemble de données fixe sans interaction en temps réel",
+          "Une méthode où l'agent apprend continuellement en interagissant avec l'environnement",
+          "Une technique exclusivement utilisée pour les réseaux de neurones",
+          "Un algorithme nécessitant des transitions d'état parfaitement connues"
+        ],
+        "answer": [0]
+      },
+      {
+        "question": "Pourquoi le Batch RL est-il utilisé ?",
+        "choices": [
+          "Pour éviter les interactions risquées avec l'environnement",
+          "Pour permettre l'apprentissage à partir de données historiques",
+          "Pour optimiser des stratégies dans des environnements où la collecte de données est coûteuse",
+          "Parce qu'il assure une convergence plus rapide que le RL classique"
+        ],
+        "answer": [0, 1, 2]
+      },
+      {
+        "question": "Quelle technique est couramment utilisée en Batch RL ?",
+        "choices": [
+          "Least Squares Policy Iteration",
+          "Monte Carlo Control",
+          "Deep Q-Learning",
+          "Gradient TD"
+        ],
+        "answer": [0]
+      },
+      {
+        "question": "Quel est le but du Deep Q-Network (DQN) ?",
+        "choices": [
+          "Utiliser des réseaux de neurones pour approximer la fonction de valeur",
+          "Appliquer le Tile Coding aux espaces d'états discrets",
+          "Réduire le besoin d'échantillons en RL",
+          "Utiliser l'importance sampling pour la mise à jour des valeurs d'état"
+        ],
+        "answer": [0]
+      }
+    ]
+  }
+  

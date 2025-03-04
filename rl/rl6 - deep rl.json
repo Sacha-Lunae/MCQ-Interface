@@ -1,0 +1,195 @@
+{
+    "qcm": [
+      {
+        "question": "Quel est l'objectif principal des méthodes de Deep Reinforcement Learning (Deep RL) ?",
+        "choices": [
+          "Utiliser des réseaux de neurones pour approximer des fonctions de valeur et de politique",
+          "Remplacer complètement les méthodes basées sur la valeur",
+          "Réduire la complexité computationnelle des algorithmes RL",
+          "Éviter l'utilisation des techniques de gradient de politique"
+        ],
+        "answer": [0]
+      },
+      {
+        "question": "Quel algorithme améliore le Deep Deterministic Policy Gradient (DDPG) ?",
+        "choices": [
+          "Twin Delayed Deep Deterministic Policy Gradient (TD3)",
+          "Soft Actor-Critic (SAC)",
+          "Proximal Policy Optimization (PPO)",
+          "Trust Region Policy Optimization (TRPO)"
+        ],
+        "answer": [0]
+      },
+      {
+        "question": "Quelles innovations TD3 introduit-il pour améliorer DDPG ?",
+        "choices": [
+          "Clipped Double Q-learning pour réduire le biais d'estimation",
+          "Mises à jour différées de la politique",
+          "Lissage de la politique cible",
+          "Suppression de l'entropie dans la mise à jour de la politique"
+        ],
+        "answer": [0, 1, 2]
+      },
+      {
+        "question": "Pourquoi SAC (Soft Actor-Critic) est-il bien adapté aux tâches de contrôle continu ?",
+        "choices": [
+          "Il maximise l'entropie pour une meilleure exploration",
+          "Il utilise deux réseaux de critique pour éviter la surestimation",
+          "Il est plus rapide que toutes les méthodes basées sur la valeur",
+          "Il est limité aux environnements discrets"
+        ],
+        "answer": [0, 1]
+      },
+      {
+        "question": "Quelles sont les principales caractéristiques de TRPO ?",
+        "choices": [
+          "Utilisation du gradient naturel",
+          "Contrainte de KL-divergence pour limiter les mises à jour de politique",
+          "Optimisation monotone de la politique",
+          "Utilisation d'un replay buffer"
+        ],
+        "answer": [0, 1, 2]
+      },
+      {
+        "question": "Pourquoi PPO est-il souvent préféré à TRPO ?",
+        "choices": [
+          "Il est plus simple à implémenter",
+          "Il n'a pas besoin d'une contrainte explicite sur la KL-divergence",
+          "Il est toujours plus efficace que TRPO",
+          "Il est basé sur des algorithmes off-policy"
+        ],
+        "answer": [0, 1]
+      },
+      {
+        "question": "Qu'est-ce qui distingue un algorithme on-policy d'un algorithme off-policy ?",
+        "choices": [
+          "Un algorithme on-policy met à jour sa politique avec les trajectoires collectées sous cette même politique",
+          "Un algorithme off-policy peut apprendre à partir d'anciennes trajectoires stockées dans un buffer",
+          "Les algorithmes on-policy sont plus efficaces en termes d'échantillons",
+          "Les algorithmes off-policy ne nécessitent pas d'apprentissage par renforcement"
+        ],
+        "answer": [0, 1]
+      },
+      {
+        "question": "Quel est l'objectif principal des méthodes de RL basées sur un modèle ?",
+        "choices": [
+          "Simuler des trajectoires futures en utilisant un modèle appris de l'environnement",
+          "Éviter l'utilisation de réseaux de neurones",
+          "Optimiser uniquement des politiques stochastiques",
+          "Réduire le besoin d'exploration"
+        ],
+        "answer": [0]
+      },
+      {
+        "question": "Pourquoi les agents basés sur un modèle sont-ils attractifs ?",
+        "choices": [
+          "Ils permettent de planifier sur plusieurs étapes",
+          "Ils nécessitent moins d'échantillons pour apprendre",
+          "Ils ne nécessitent pas d'exploration active",
+          "Ils évitent l'utilisation de toute fonction de valeur"
+        ],
+        "answer": [0, 1]
+      },
+      {
+        "question": "Quelle innovation EfficientZero apporte-t-il dans l'apprentissage des jeux Atari ?",
+        "choices": [
+          "Il atteint 116% de la performance humaine médiane sur Atari 100k",
+          "Il utilise une perte de cohérence auto-supervisée",
+          "Il remplace les récompenses par des prévisions de récompenses",
+          "Il supprime l'utilisation de MCTS"
+        ],
+        "answer": [0, 1, 2]
+      },
+      {
+        "question": "Pourquoi le jeu de Go posait-il un défi particulier aux algorithmes RL avant AlphaGo ?",
+        "choices": [
+          "Sa complexité combinatoire rendait impossible l'exploration exhaustive",
+          "Les algorithmes classiques ne pouvaient pas évaluer directement qui gagnait",
+          "Les réseaux de neurones étaient inefficaces pour représenter les positions",
+          "Aucun modèle de l'environnement ne pouvait être utilisé"
+        ],
+        "answer": [0, 1]
+      },
+      {
+        "question": "Quelle méthode AlphaGo utilise-t-il pour évaluer ses actions ?",
+        "choices": [
+          "Monte Carlo Tree Search (MCTS)",
+          "Apprentissage supervisé par imitation",
+          "Auto-entraînement par Self-Play",
+          "Optimisation basée sur des polynômes"
+        ],
+        "answer": [0, 1, 2]
+      },
+      {
+        "question": "Quelle était la principale amélioration d'AlphaZero par rapport à AlphaGo ?",
+        "choices": [
+          "Suppression de la dépendance aux données humaines",
+          "Utilisation de MCTS sans heuristiques codées",
+          "Utilisation d'une politique déterministe uniquement",
+          "Suppression de l'apprentissage par renforcement"
+        ],
+        "answer": [0, 1]
+      },
+      {
+        "question": "Pourquoi MuZero est-il considéré comme une avancée majeure ?",
+        "choices": [
+          "Il apprend sans avoir besoin de règles explicites",
+          "Il modélise directement la dynamique de l'environnement",
+          "Il n'a pas besoin d'un réseau de neurones",
+          "Il remplace l'entraînement par imitation"
+        ],
+        "answer": [0, 1]
+      },
+      {
+        "question": "Quels éléments MuZero apprend-il à modéliser ?",
+        "choices": [
+          "La valeur d'un état",
+          "La politique optimale",
+          "La fonction de récompense",
+          "Les transitions exactes entre états"
+        ],
+        "answer": [0, 1, 2]
+      },
+      {
+        "question": "Quel rôle joue Monte Carlo Tree Search (MCTS) dans AlphaGo et MuZero ?",
+        "choices": [
+          "Explorer plusieurs branches possibles d'une partie",
+          "Simuler des résultats de jeu pour améliorer la politique",
+          "Éliminer complètement le besoin d'entraînement",
+          "Optimiser l'entropie de la politique"
+        ],
+        "answer": [0, 1]
+      },
+      {
+        "question": "Qu'est-ce qu'EfficientZero apporte de plus par rapport à MuZero ?",
+        "choices": [
+          "Une correction off-policy",
+          "Une meilleure gestion des récompenses rares",
+          "Un remplacement du modèle d'environnement par un réseau convolutif",
+          "Une suppression des mises à jour par gradient"
+        ],
+        "answer": [0, 1]
+      },
+      {
+        "question": "Pourquoi EfficientZero est-il une avancée en apprentissage avec peu de données ?",
+        "choices": [
+          "Il atteint des performances élevées avec seulement 100k échantillons",
+          "Il optimise la mise à jour des valeurs sans stockage massif",
+          "Il réduit le besoin d'exploration active",
+          "Il utilise un réseau de neurones plus petit que MuZero"
+        ],
+        "answer": [0, 1]
+      },
+      {
+        "question": "Quelles techniques EfficientZero utilise-t-il pour améliorer MuZero ?",
+        "choices": [
+          "Perte de cohérence auto-supervisée",
+          "Correction des transitions off-policy",
+          "Optimisation d'un facteur d'exploration",
+          "Suppression de l'usage de MCTS"
+        ],
+        "answer": [0, 1]
+      }
+    ]
+  }
+  

@@ -1,0 +1,185 @@
+{
+    "qcm": [
+      {
+        "question": "Quelle est la principale différence entre les méthodes basées sur la valeur et les méthodes basées sur la politique en RL ?",
+        "choices": [
+          "Les méthodes basées sur la valeur n'utilisent pas de politique",
+          "Les méthodes basées sur la politique n'ont pas de fonction de valeur",
+          "Les méthodes basées sur la valeur nécessitent un modèle de l'environnement",
+          "Les méthodes basées sur la politique ne peuvent pas être utilisées pour des actions continues"
+        ],
+        "answer": [0, 1]
+      },
+      {
+        "question": "Quels sont les avantages de la paramétrisation de la politique en RL ?",
+        "choices": [
+          "Elle améliore la convergence",
+          "Elle est bien adaptée aux espaces d'actions continus",
+          "Elle permet d'apprendre des politiques déterministes uniquement",
+          "Elle empêche la politique de converger vers un optimum local"
+        ],
+        "answer": [0, 1]
+      },
+      {
+        "question": "Quels sont les inconvénients de la paramétrisation de la politique en RL ?",
+        "choices": [
+          "Elle converge souvent vers un optimum local",
+          "Elle est inefficace pour l'évaluation de la politique",
+          "Elle empêche l'utilisation d'algorithmes d'optimisation",
+          "Elle ne fonctionne pas avec les fonctions d'approximation"
+        ],
+        "answer": [0, 1]
+      },
+      {
+        "question": "Quelle est la principale limitation des recherches de politique par essai-erreur (random search) ?",
+        "choices": [
+          "Elles ne sont pas efficaces lorsque l'espace des politiques est trop grand",
+          "Elles convergent toujours vers l'optimum global",
+          "Elles nécessitent un modèle de transition",
+          "Elles n'apportent aucune amélioration par rapport aux méthodes basées sur la valeur"
+        ],
+        "answer": [0]
+      },
+      {
+        "question": "Quel est l'objectif principal des méthodes de gradient de politique ?",
+        "choices": [
+          "Optimiser directement la politique en maximisant le retour cumulé",
+          "Évaluer la valeur des états sans politique explicite",
+          "Estimer le modèle de l'environnement",
+          "Minimiser la variance des récompenses obtenues"
+        ],
+        "answer": [0]
+      },
+      {
+        "question": "Pourquoi la méthode du gradient de politique est-elle préférable aux approches naïves comme la recherche aléatoire ?",
+        "choices": [
+          "Elle suit un gradient dans l'espace des politiques",
+          "Elle est plus efficace dans les espaces d'actions continus",
+          "Elle garantit de toujours trouver la politique optimale",
+          "Elle ne dépend pas des transitions d'états"
+        ],
+        "answer": [0, 1]
+      },
+      {
+        "question": "Quelle est l'idée principale du théorème du gradient de politique ?",
+        "choices": [
+          "Mettre à jour directement les paramètres de la politique en fonction du gradient du retour",
+          "Minimiser la variance des mises à jour de politique",
+          "Utiliser une fonction de valeur pour estimer les meilleures actions",
+          "Se baser uniquement sur des transitions d'états connues"
+        ],
+        "answer": [0]
+      },
+      {
+        "question": "Quels sont les problèmes des algorithmes naïfs de gradient de politique ?",
+        "choices": [
+          "Ils nécessitent un grand nombre de trajectoires pour obtenir des gradients stables",
+          "Ils ont une grande variance",
+          "Ils sont toujours plus efficaces que les méthodes de valeur",
+          "Ils ne peuvent pas être appliqués aux problèmes avec des actions discrètes"
+        ],
+        "answer": [0, 1]
+      },
+      {
+        "question": "Pourquoi ajouter une fonction de baseline dans le gradient de politique ?",
+        "choices": [
+          "Pour réduire la variance sans introduire de biais",
+          "Pour augmenter l'exploration de la politique",
+          "Pour garantir la convergence vers un optimum global",
+          "Pour éviter l'utilisation d'une fonction de valeur"
+        ],
+        "answer": [0]
+      },
+      {
+        "question": "Quel est le rôle de la fonction d'avantage dans les méthodes de gradient de politique ?",
+        "choices": [
+          "Mesurer à quel point une action est meilleure que la moyenne des actions dans un état donné",
+          "Estimer directement la valeur d'un état",
+          "Minimiser l'erreur de prédiction de la récompense",
+          "Calculer l'erreur entre les transitions réelles et attendues"
+        ],
+        "answer": [0]
+      },
+      {
+        "question": "Quels sont les compromis entre Monte Carlo et les méthodes de bootstrapping pour estimer l'avantage ?",
+        "choices": [
+          "Monte Carlo est sans biais mais a une forte variance",
+          "Le bootstrapping est biaisé mais réduit la variance",
+          "Monte Carlo nécessite un replay buffer",
+          "Le bootstrapping est uniquement applicable aux méthodes tabulaires"
+        ],
+        "answer": [0, 1]
+      },
+      {
+        "question": "Pourquoi les méthodes Actor-Critic sont-elles utiles ?",
+        "choices": [
+          "Elles combinent les approches de gradient de politique et les fonctions de valeur",
+          "Elles permettent une meilleure stabilité et convergence",
+          "Elles nécessitent moins d'échantillons que les méthodes purement basées sur la valeur",
+          "Elles ne sont applicables qu'aux problèmes continus"
+        ],
+        "answer": [0, 1]
+      },
+      {
+        "question": "Quelle est la principale différence entre A2C et les méthodes classiques de gradient de politique ?",
+        "choices": [
+          "A2C utilise un critique pour estimer l'avantage",
+          "A2C est une méthode purement on-policy",
+          "Les méthodes classiques de gradient de politique n'utilisent pas d'approximation de valeur",
+          "A2C ne fonctionne qu'avec des réseaux de neurones"
+        ],
+        "answer": [0, 1]
+      },
+      {
+        "question": "Pourquoi A2C ne peut pas être considéré comme strictement off-policy ?",
+        "choices": [
+          "Parce qu'il met à jour la politique en fonction des données collectées sous cette même politique",
+          "Parce qu'il utilise un replay buffer",
+          "Parce qu'il repose sur le théorème du gradient de politique",
+          "Parce qu'il ne peut pas être utilisé avec des algorithmes TD"
+        ],
+        "answer": [0]
+      },
+      {
+        "question": "Quels algorithmes sont basés sur le gradient de politique ?",
+        "choices": [
+          "REINFORCE",
+          "Trust Region Policy Optimization (TRPO)",
+          "Soft Actor-Critic (SAC)",
+          "Deep Q-Network (DQN)"
+        ],
+        "answer": [0, 1]
+      },
+      {
+        "question": "Quelle est la principale distinction entre les approches basées sur la valeur et les approches basées sur la politique ?",
+        "choices": [
+          "Les approches basées sur la valeur utilisent une fonction critique",
+          "Les approches basées sur la politique optimisent directement les paramètres de la politique",
+          "Les approches basées sur la politique sont toujours plus efficaces que les méthodes basées sur la valeur",
+          "Les méthodes basées sur la valeur nécessitent un gradient de politique explicite"
+        ],
+        "answer": [0, 1]
+      },
+      {
+        "question": "Qu'est-ce que l'entropie régulière dans les méthodes de gradient de politique ?",
+        "choices": [
+          "Une technique pour encourager l'exploration",
+          "Une méthode pour rendre les mises à jour plus stables",
+          "Une façon d'optimiser les politiques déterministes",
+          "Un algorithme de bootstrapping"
+        ],
+        "answer": [0, 1]
+      },
+      {
+        "question": "Pourquoi l'entropie est-elle ajoutée aux mises à jour du gradient de politique ?",
+        "choices": [
+          "Pour éviter la convergence prématurée vers une politique sous-optimale",
+          "Pour minimiser le biais d'estimation des gradients",
+          "Pour rendre l'algorithme plus échantillon-efficient",
+          "Pour réduire la variance des mises à jour"
+        ],
+        "answer": [0]
+      }
+    ]
+  }
+  
